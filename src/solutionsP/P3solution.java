@@ -3,12 +3,9 @@ package solutionsP;
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
-public class P3solution extends AbstractIntersectionFinder {
+public class P3solution<E> extends AbstractIntersectionFinder<E> {
 
-	public P3solution(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
+	public P3solution(String name) {super(name);}
 
 	@Override
 	public MySet intersectSets(MySet[] t) {

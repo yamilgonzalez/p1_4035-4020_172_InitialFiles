@@ -2,17 +2,15 @@ package solutionsP;
 
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
+import dataGenerator.DataGenerator;
 
-public class P1P2solution extends AbstractIntersectionFinder {
+public class P1P2solution<E> extends AbstractIntersectionFinder<E> {
 
-	public P1P2solution(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
+	public P1P2solution(String name) {super(name);}
 
 	@Override
 	public MySet intersectSets(MySet[] t) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
