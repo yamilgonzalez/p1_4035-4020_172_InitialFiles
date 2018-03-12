@@ -21,7 +21,7 @@
   </class>  
   <interface id="3" language="java" name="interfaces.IntersectionFinder" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/interfaces/IntersectionFinder.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="802" y="-63"/>    
+    <position height="-1" width="-1" x="1008" y="-59"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -40,7 +40,7 @@
   <class id="5" language="java" name="mySetImplementations.AbstractMySet" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/mySetImplementations/AbstractMySet.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="430" y="-8"/>    
+    <position height="-1" width="-1" x="438" y="-7"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
   </class>  
   <class id="6" language="java" name="mySetImplementations.Set1" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/mySetImplementations/Set1.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="615" y="-3"/>    
+    <position height="-1" width="-1" x="627" y="-2"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -58,7 +58,7 @@
   </class>  
   <class id="7" language="java" name="mySetImplementations.Set2" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/mySetImplementations/Set2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="432" y="221"/>    
+    <position height="-1" width="-1" x="437" y="236"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -67,7 +67,7 @@
   </class>  
   <class id="8" language="java" name="p1MainClasses.FilesGeneratorMain" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/p1MainClasses/FilesGeneratorMain.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="616" y="202"/>    
+    <position height="-1" width="-1" x="627" y="199"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -76,7 +76,7 @@
   </class>  
   <class id="9" language="java" name="p1MainClasses.Part1Main" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/p1MainClasses/Part1Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="588" y="320"/>    
+    <position height="-1" width="-1" x="797" y="-64"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -85,7 +85,7 @@
   </class>  
   <class id="10" language="java" name="p1MainClasses.Part2Main" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/p1MainClasses/Part2Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="713" y="321"/>    
+    <position height="-1" width="-1" x="796" y="64"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -94,7 +94,7 @@
   </class>  
   <class id="11" language="java" name="solutionsP.P1P2solution" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/solutionsP/P1P2solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="836" y="102"/>    
+    <position height="-1" width="-1" x="829" y="278"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -103,7 +103,7 @@
   </class>  
   <class id="12" language="java" name="solutionsP.P3solution" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/solutionsP/P3solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1019" y="103"/>    
+    <position height="-1" width="-1" x="1013" y="283"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -112,7 +112,7 @@
   </class>  
   <class id="13" language="java" name="solutionsP.P4solution" project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/solutionsP/P4solution.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1208" y="105"/>    
+    <position height="-1" width="-1" x="1202" y="277"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -123,7 +123,7 @@
     project="p1_4035-4020_172_InitialFiles" 
     file="/p1_4035-4020_172_InitialFiles/src/setIntersectionFinders/AbstractIntersectionFinder.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1020" y="-53"/>    
+    <position height="-1" width="-1" x="1011" y="109"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
