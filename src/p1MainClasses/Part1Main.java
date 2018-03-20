@@ -9,6 +9,7 @@ import dataGenerator.DataReader;
 import interfaces.IntersectionFinder;
 import interfaces.MySet;
 import mySetImplementations.Set1;
+import mySetImplementations.Set2;
 import solutionsP.P1P2solution;
 
 
@@ -20,14 +21,21 @@ public class Part1Main {
 			switch(args[0]){
 			case "1": { 
 				IntersectionFinder P1 = new P1P2solution("1");
-				System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder()));
+				MySet TemporarySet = new Set1();
+				System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(TemporarySet)));
+				break;
+			}
+			case "2": {
+				IntersectionFinder P2 = new P1P2solution("2");
+				MySet TemporarySet = new Set2();
+				System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(TemporarySet)));
 				break;
 			}
 			}
 		}
 	}
 
-	private static MySet[] unionFinder() throws FileNotFoundException {
+	private static MySet[] unionFinder(MySet TemporarySet) throws FileNotFoundException {
 
 		String parentDirectory = "inputFiles"; 
 		Scanner parameters = new Scanner(new File(parentDirectory, "parameters.txt")); 
@@ -36,7 +44,6 @@ public class Part1Main {
 		parameters.close();
 
 		MySet[] t = new MySet[m];
-		MySet TemporarySet = new Set1();
 
 		for (int j=0; j<m; j++) { 
 			for (int i=0; i<n; i++) {
@@ -46,7 +53,7 @@ public class Part1Main {
 					TemporarySet.add(inputFile.nextInt());
 				inputFile.close();  
 			}
-			t[j] = TemporarySet;
+			t[j] = (MySet)TemporarySet;
 		}
 		return t;
 	}
