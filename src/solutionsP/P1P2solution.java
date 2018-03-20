@@ -1,3 +1,5 @@
+package solutionsP;
+
 import interfaces.MySet;
 import mySetImplementations.Set1;
 import mySetImplementations.Set2;

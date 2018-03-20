@@ -1,7 +1,6 @@
 package solutionsP;
 
 import java.util.ArrayList;
-
 import interfaces.MySet;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
@@ -15,7 +14,7 @@ public class P3solution<E> extends AbstractIntersectionFinder<E> {
 		ArrayList<E> allElements = new ArrayList<E>();
 		Integer m = t.length;
 		for(int i= 0 ; i<m ; i++){
-			for (Object x : t){
+			for (Object x : t[i]){
 				allElements.add((E) x);
 			}
 		}
@@ -39,5 +38,6 @@ public class P3solution<E> extends AbstractIntersectionFinder<E> {
 
 		return T;
 	}
-
+	
 }
+
