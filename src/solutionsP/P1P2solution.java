@@ -1,3 +1,4 @@
+
 package solutionsP;
 
 import interfaces.MySet;
@@ -45,3 +46,4 @@ public class P1P2solution<E> extends AbstractIntersectionFinder {
 	}
 
 }
+
