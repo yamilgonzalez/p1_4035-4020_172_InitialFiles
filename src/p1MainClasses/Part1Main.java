@@ -12,6 +12,7 @@ import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 import solutionsP.P1P2solution;
 import solutionsP.P3solution;
+import solutionsP.P4solution;
 
 
 public class Part1Main {
@@ -36,6 +37,12 @@ public class Part1Main {
 				IntersectionFinder P3 = new P3solution("3");
 				MySet TemporarySet = new Set2();
 				System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(TemporarySet)));
+				break;
+			}
+			case "4": {
+				IntersectionFinder P4 = new P4solution("4");
+				MySet TemporarySet = new Set2();
+				System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(TemporarySet)));
 				break;
 			}
 			}
