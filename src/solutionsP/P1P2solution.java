@@ -16,7 +16,7 @@ public class P1P2solution<E> extends AbstractIntersectionFinder {
 	@Override
 	public MySet intersectSets(MySet[] t) {
 		if (getName().equals("1")) {
-			Set1<E> T = new Set1<E>();
+			MySet<E> T = new Set1<E>();
 			T = (Set1<E>) t[0];
 			for(int i = 1 ; i<t.length ; i++) {
 				for (Object x : T) {
@@ -28,7 +28,7 @@ public class P1P2solution<E> extends AbstractIntersectionFinder {
 			return T;
 		}
 		else if (getName().equals("2")) {
-			Set2<E> T = new Set2<E>();
+			MySet<E> T = new Set2<E>();
 			T = (Set2<E>) t[0];
 			for(int i = 1 ; i<t.length ; i++) {
 				for (Object x:T) {
