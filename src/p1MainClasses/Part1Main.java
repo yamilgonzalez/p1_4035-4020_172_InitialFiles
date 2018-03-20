@@ -47,6 +47,18 @@ public class Part1Main {
 			}
 			}
 		}
+		else {
+			IntersectionFinder P1 = new P1P2solution("1");
+			IntersectionFinder P2 = new P1P2solution("2");
+			IntersectionFinder P3 = new P3solution("3");
+			IntersectionFinder P4 = new P4solution("4");
+			MySet TemporarySet1 = new Set1();
+			MySet TemporarySet2 = new Set2();
+			System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(TemporarySet1)));
+			System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(TemporarySet2)));
+			System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(TemporarySet2)));
+			System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(TemporarySet2)));
+		}
 	}
 
 	private static MySet[] unionFinder(MySet TemporarySet) throws FileNotFoundException {
