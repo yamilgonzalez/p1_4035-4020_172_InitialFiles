@@ -1,10 +1,14 @@
 package experimentalClasses;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Map;
 
+import dataGenerator.DataReader;
 import interfaces.IntersectionFinder;
 import interfaces.MySet;
+import mySetImplementations.Set1;
+import mySetImplementations.Set2;
 
 public class StrategiesTimeCollection<E> 
 extends ArrayList<Map.Entry<Integer, Float>> { 
@@ -20,8 +24,20 @@ extends ArrayList<Map.Entry<Integer, Float>> {
         return strategy.getName(); 
     }
     
-    public void runTrial(Integer [][][] data) { 
-    	strategy.intersectSets(null);
+    public void runTrial(Integer [][][] data) throws FileNotFoundException { 
+    	int m = data[0].length;
+    	MySet[] t = new MySet[m];
+
+    	for(int j = 0; j < data[0].length ; j++)
+    		for(int i = 0; i < data.length ; i++ ){
+        		t[j] = new Set2();
+        		if(getStrategyName().equals("P1")) t[j] = new Set1();
+    			for(int k = 0; k < data[i][j].length; k++){
+    				t[j].add(data[i][j][k]);
+    			}
+    	}
+    	//create array of sets as in Part1Main
+    	strategy.intersectSets(t);
     }
     
     public void resetSum() { 

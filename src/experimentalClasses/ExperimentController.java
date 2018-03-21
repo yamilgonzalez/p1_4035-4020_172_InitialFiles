@@ -26,16 +26,11 @@ public class ExperimentController {
 		this.iStep = iStep;
 		this.rep = rep;
 		resultsPerStrategy = new ArrayList<>();
-
-
 	}
-
 	public void addStrategy(StrategiesTimeCollection<Integer> strategy) { 
 		resultsPerStrategy.add(strategy); 
 	}
-
-
-	public void run() throws CloneNotSupportedException { 
+	public void run() throws CloneNotSupportedException, FileNotFoundException { 
 		if (resultsPerStrategy.isEmpty())
 			throw new IllegalStateException("No strategy has been added."); 
 		for (int size=iSize; size<=fSize; size+= iStep) { 
@@ -44,11 +39,11 @@ public class ExperimentController {
 
 			for (int r = 0; r<rep; r++) {
 
-				Integer[][][] dataset = (Integer[][][]) generateData(n, m, size);  
+				Integer[][][] dataSet = (Integer[][][]) generateData(n, m, size);  
 
 				for (StrategiesTimeCollection<Integer> strategy : resultsPerStrategy) {	
 					long startTime = System.nanoTime();  
-					strategy.runTrial(dataset);                
+					strategy.runTrial(dataSet);                
 					long endTime = System.nanoTime();    
 
 					int estimatedTime = (int) (endTime-startTime);   

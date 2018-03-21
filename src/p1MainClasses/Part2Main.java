@@ -9,8 +9,8 @@ import solutionsP.P3solution;
 import solutionsP.P4solution;
 
 public class Part2Main {
-	public static void main (String[] args) throws CloneNotSupportedException {
-		int[] parms = {10,50,1000,50000,1000,200};
+	public static void main (String[] args) throws CloneNotSupportedException, FileNotFoundException {
+		int[] parms = {10,50,1000,50000,1000,200};  //default values
 		//companies, crime events, min size, max size, size increment, number of trials per size/strategy
 
 		//if the user provides an input, change default values
@@ -26,10 +26,10 @@ public class Part2Main {
 		// Parm6: repetitions for each size
 		ExperimentController ec = new ExperimentController(parms[0], parms[1], parms[2], parms[3],parms [4], parms[5]); 
 		/**/	
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1P2solution("1")));
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1P2solution("2")));
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P3solution("3")));
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P4solution("4")));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1P2solution("P1")));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P1P2solution("P2")));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P3solution("P3")));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new P4solution("P4")));
 
 		/**/
 
