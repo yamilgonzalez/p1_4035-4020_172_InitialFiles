@@ -5,35 +5,30 @@ import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
+/**
+ * @author Maria A Marrero
+ * @author Yamil J Gonzalez
+ */
+
 public class P1P2solution<E> extends AbstractIntersectionFinder {
 
-	public P1P2solution(String name) {super(name);}
+	public P1P2solution(String name) {super(name);} 
 
 	@Override
 	public MySet intersectSets(MySet[] t) {
 		MySet T;
-		if (getName().equals("1")) {
-			T = (Set1<E>) t[0];
-			for(int i = 1 ; i<t.length ; i++) {
-				for (Object x : T) {
-					if (!t[i].contains(x)) {
-						T.remove(x);
-					}
-				}
-			}
-			return T;
-		}
-		else if (getName().equals("2")) {
+		if (getName().equals("1"))         //Checks strategy selected by user and constructs
+			T = (Set1<E>) t[0];			   //The required set
+		else 
 			T = (Set2<E>) t[0];
-			for(int i = 1 ; i<t.length ; i++) {
-				for (Object x : T) {
-					if(!t[i].contains(x)) {
-						T.remove(x);
-					}
+
+		for(int i = 1 ; i<t.length ; i++) { //Intersects Set
+			for (Object x : T) {
+				if (!t[i].contains(x)) {
+					T.remove(x);
 				}
 			}
-			return T;
 		}
-		return null;		
+		return T;	
 	}
 }
