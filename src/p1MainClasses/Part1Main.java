@@ -77,12 +77,12 @@ public class Part1Main {
 
 		for (int j=0; j<m; j++) { 
 			for (int i=0; i<n; i++) {
-				t[j] = new Set2();
-				if(argument.equals("1")) t[j] = new Set1();
+				t[j] = new Set2();                           //initializes the set as Set2
+				if(argument.equals("1")) t[j] = new Set1();  //if the args is "1" then it is changed to Set1
 
 				
-				String fileName = "F_" + i + "_" + j + ".txt"; 
-				Scanner inputFile = new Scanner(new File(parentDirectory, fileName)); 
+				String fileName = "F_" + i + "_" + j + ".txt";
+				Scanner inputFile = new Scanner(new File(parentDirectory, fileName)); //reads files
 				while (inputFile.hasNext())
 					t[j].add(inputFile.nextInt());
 				inputFile.close();  
