@@ -17,7 +17,7 @@ public class P1P2solution<E> extends AbstractIntersectionFinder {
 	@Override
 	public MySet intersectSets(MySet[] t) {
 		MySet T;
-		if (getName().equals("1"))         //Checks strategy selected by user and constructs
+		if (getName().equals("P1"))         //Checks strategy selected by user and constructs
 			T = (Set1<E>) t[0];			   //The required set
 		else 
 			T = (Set2<E>) t[0];

@@ -20,36 +20,38 @@ import solutionsP.P4solution;
 public class Part1Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
-
+		if (args.length > 1)
+			System.out.println("Unexpected number of parameters. Must be 1.");
+		
 		if (args.length!=0) { //The user selected a strategy
 			switch(args[0]){
 			case "1": { //Strategy by P1 Selected
-				IntersectionFinder P1 = new P1P2solution("1");
+				IntersectionFinder P1 = new P1P2solution("P1");
 				System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "2": { //Strategy by P2 Selected
-				IntersectionFinder P2 = new P1P2solution("2");
+				IntersectionFinder P2 = new P1P2solution("P2");
 				System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "3": { //Strategy by P3 Selected
-				IntersectionFinder P3 = new P3solution("3");
+				IntersectionFinder P3 = new P3solution("P3");
 				System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "4": { //Strategy by P4 Selected
-				IntersectionFinder P4 = new P4solution("4");
+				IntersectionFinder P4 = new P4solution("P4");
 				System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			}
 		}
 		else { //The user did not selected a strategy, apply all
-			IntersectionFinder P1 = new P1P2solution("1");
-			IntersectionFinder P2 = new P1P2solution("2");
-			IntersectionFinder P3 = new P3solution("3");
-			IntersectionFinder P4 = new P4solution("4");
+			IntersectionFinder P1 = new P1P2solution("P1");
+			IntersectionFinder P2 = new P1P2solution("P2");
+			IntersectionFinder P3 = new P3solution("P3");
+			IntersectionFinder P4 = new P4solution("P4");
 			System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder("1")));
 			System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder("2")));
 			System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder("3")));
