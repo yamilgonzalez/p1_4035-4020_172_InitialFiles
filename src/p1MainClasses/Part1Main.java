@@ -3,6 +3,8 @@ package p1MainClasses;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+
+import dataGenerator.DataReader;
 import interfaces.IntersectionFinder;
 import interfaces.MySet;
 import mySetImplementations.Set1;
@@ -66,28 +68,17 @@ public class Part1Main {
  * @throws FileNotFoundException
  */
 	private static MySet[] unionFinder(String argument) throws FileNotFoundException {
-
-		String parentDirectory = "inputFiles"; 
-		Scanner parameters = new Scanner(new File(parentDirectory, "parameters.txt")); 
-		int n = parameters.nextInt(); 
-		int m = parameters.nextInt();
-		parameters.close();
+		DataReader dr = new DataReader();
+		Object [][][] dataSet = dr.readDataFiles();
+		MySet[] t = new MySet[dataSet[0].length];
 		
-		
-
-		MySet[] t = new MySet[m];
-
-		for (int j=0; j<m; j++) { 
-			for (int i=0; i<n; i++) {
-				t[j] = new Set2();                           //initializes the set as Set2
-				if(argument.equals("1")) t[j] = new Set1();  //if the args is "1" then it is changed to Set1
-
-				
-				String fileName = "F_" + i + "_" + j + ".txt";
-				Scanner inputFile = new Scanner(new File(parentDirectory, fileName)); //reads files
-				while (inputFile.hasNext())
-					t[j].add(inputFile.nextInt());
-				inputFile.close();  
+		for(int j = 0 ; j<dataSet[0].length ; j++) {
+			t[j] = new Set2();                           //initializes the set as Set2
+			if(argument.equals("1")) t[j] = new Set1();  //if the args is "1" then it is changed to Set1
+			for(int i =0 ; i<dataSet.length ; i++) {
+				for( int k=0 ; k< dataSet[i][j].length; k++) {
+					t[j].add(dataSet[i][j][k]);
+				}
 			}
 		}
 		return t;
