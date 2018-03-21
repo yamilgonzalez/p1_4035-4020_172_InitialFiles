@@ -24,25 +24,25 @@ public class Part1Main {
 			case "1": { 
 				IntersectionFinder P1 = new P1P2solution("1");
 				MySet TemporarySet = new Set1();
-				System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(TemporarySet)));
+				System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "2": {
 				IntersectionFinder P2 = new P1P2solution("2");
 				MySet TemporarySet = new Set2();
-				System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(TemporarySet)));
+				System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "3": {
 				IntersectionFinder P3 = new P3solution("3");
 				MySet TemporarySet = new Set2();
-				System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(TemporarySet)));
+				System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			case "4": {
 				IntersectionFinder P4 = new P4solution("4");
 				MySet TemporarySet = new Set2();
-				System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(TemporarySet)));
+				System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(args[0])));
 				break;
 			}
 			}
@@ -52,34 +52,37 @@ public class Part1Main {
 			IntersectionFinder P2 = new P1P2solution("2");
 			IntersectionFinder P3 = new P3solution("3");
 			IntersectionFinder P4 = new P4solution("4");
-			MySet TemporarySet1 = new Set1();
-			MySet TemporarySet2 = new Set2();
-			System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder(TemporarySet1)));
-			System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder(TemporarySet2)));
-			System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder(TemporarySet2)));
-			System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder(TemporarySet2)));
+			System.out.println("Final Set by P1:" + P1.intersectSets(unionFinder("1")));
+			System.out.println("Final Set by P2:" + P2.intersectSets(unionFinder("2")));
+			System.out.println("Final Set by P3:" + P3.intersectSets(unionFinder("3")));
+			System.out.println("Final Set by P4:" + P4.intersectSets(unionFinder("4")));
 		}
 	}
 
-	private static MySet[] unionFinder(MySet TemporarySet) throws FileNotFoundException {
+	private static MySet[] unionFinder(String argument) throws FileNotFoundException {
 
 		String parentDirectory = "inputFiles"; 
 		Scanner parameters = new Scanner(new File(parentDirectory, "parameters.txt")); 
 		int n = parameters.nextInt(); 
 		int m = parameters.nextInt();
 		parameters.close();
+		
+		
 
 		MySet[] t = new MySet[m];
 
 		for (int j=0; j<m; j++) { 
 			for (int i=0; i<n; i++) {
+				t[j] = new Set2();
+				if(argument.equals("1")) t[j] = new Set1();
+
+				
 				String fileName = "F_" + i + "_" + j + ".txt"; 
 				Scanner inputFile = new Scanner(new File(parentDirectory, fileName)); 
 				while (inputFile.hasNext())
-					TemporarySet.add(inputFile.nextInt());
+					t[j].add(inputFile.nextInt());
 				inputFile.close();  
 			}
-			t[j] = (MySet)TemporarySet;
 		}
 		return t;
 	}
