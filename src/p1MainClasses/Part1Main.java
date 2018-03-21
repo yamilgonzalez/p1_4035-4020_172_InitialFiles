@@ -2,10 +2,7 @@ package p1MainClasses;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
-
-import dataGenerator.DataReader;
 import interfaces.IntersectionFinder;
 import interfaces.MySet;
 import mySetImplementations.Set1;
