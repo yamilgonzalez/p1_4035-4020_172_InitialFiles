@@ -1,5 +1,7 @@
 package solutionsP;
 
+import java.util.Iterator;
+
 import interfaces.MySet;
 import mySetImplementations.Set1;
 import mySetImplementations.Set2;
@@ -22,11 +24,12 @@ public class P1P2solution<E> extends AbstractIntersectionFinder {
 		else 
 			T = (Set2<E>) t[0];
 
-		for(int i = 1 ; i<t.length ; i++) { //Intersects Set
-			for (Object x : T) {
-				if (!t[i].contains(x)) {
-					T.remove(x);
-				}
+
+		for(int i = 1 ; i<t.length ; i++) {
+			Iterator<Object> setIter = T.iterator(); 
+			while(setIter.hasNext()) {
+				if (!t[i].contains(setIter.next())) 
+					setIter.remove();
 			}
 		}
 		return T;	
