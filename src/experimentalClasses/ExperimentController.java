@@ -39,11 +39,11 @@ public class ExperimentController {
 
 			for (int r = 0; r<rep; r++) {
 
-				Integer[][][] dataSet = (Integer[][][]) generateData(n, m, size);  
+				Object[][][] dataSet =  generateData(n, m, size);  
 
 				for (StrategiesTimeCollection<Integer> strategy : resultsPerStrategy) {	
 					long startTime = System.nanoTime();  
-					strategy.runTrial(dataSet);                
+					strategy.runTrial(dataSet);               
 					long endTime = System.nanoTime();    
 
 					int estimatedTime = (int) (endTime-startTime);   

@@ -24,14 +24,14 @@ extends ArrayList<Map.Entry<Integer, Float>> {
         return strategy.getName(); 
     }
     
-    public void runTrial(Integer [][][] data) throws FileNotFoundException { 
+    public void runTrial(Object [][][] data) throws FileNotFoundException { 
     	int m = data[0].length;
     	MySet[] t = new MySet[m];
 
-    	for(int j = 0; j < data[0].length ; j++)
-    		for(int i = 0; i < data.length ; i++ ){
-        		t[j] = new Set2();
-        		if(getStrategyName().equals("P1")) t[j] = new Set1();
+    	for(int j = 0; j < data[0].length ; j++) {
+    		t[j] = new Set2();
+    		if(getStrategyName().equals("P1")) t[j] = new Set1();
+    		for(int i = 0; i < data.length ; i++ )
     			for(int k = 0; k < data[i][j].length; k++){
     				t[j].add(data[i][j][k]);
     			}
