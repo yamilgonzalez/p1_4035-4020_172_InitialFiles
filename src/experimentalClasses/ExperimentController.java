@@ -7,7 +7,14 @@ import java.util.AbstractMap;
 import java.util.ArrayList;
 
 import dataGenerator.DataGenerator;
-
+/**
+ * This class represents an object data type that is able to carry the 
+ * necessary experiments to estimate execution times of particular 
+ * strategies to solve the set intersections problem as in p1_40354020_172. 
+ * 
+ * @author pedroirivera-vega
+ * @author Yamil J Gonzalez
+ */
 public class ExperimentController {
 	private int n; 					   // number of companies
 	private int m; 					   // number of crime events
