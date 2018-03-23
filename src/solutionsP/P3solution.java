@@ -6,7 +6,7 @@ import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 /**
  * 
- * @author Maria A Marrero
+ * @author Maria A. Marrero 802-15-4204 Sec 090
  *
  */
 public class P3solution<E> extends AbstractIntersectionFinder<E> {

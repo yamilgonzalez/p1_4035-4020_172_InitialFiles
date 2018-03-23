@@ -9,7 +9,7 @@ import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 /**
  * 
- * @author Yamil J Gonzalez
+ * @author Yamil J. Gonzalez 802-15-3112 Sec 090
  *
  */
 public class P4solution<E> extends AbstractIntersectionFinder<E> {

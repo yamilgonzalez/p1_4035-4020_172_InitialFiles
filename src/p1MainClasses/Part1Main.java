@@ -14,8 +14,8 @@ import solutionsP.P3solution;
 import solutionsP.P4solution;
 /**
  *
- * @author Maria A. Marrero
- * @author Yamil J. Gonzalez
+ * @author Maria A. Marrero 802-15-4204 Sec 090
+ * @author Yamil J. Gonzalez 802-15-3112 Sec 090
  *
  */
 

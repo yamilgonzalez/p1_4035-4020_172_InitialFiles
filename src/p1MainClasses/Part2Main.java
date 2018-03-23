@@ -10,8 +10,9 @@ import solutionsP.P4solution;
 /**
  * 
  * @author pedroirivera-vega
- * @author Maria A. Marrero
- * @author Yamil J. Gonzalez
+ * Modified By
+ * @author Maria A. Marrero 802-15-4204 Sec 090
+ * @author Yamil J. Gonzalez 802-15-3112 Sec 090
  */
 public class Part2Main {
 	public static void main (String[] args) throws CloneNotSupportedException, FileNotFoundException {

@@ -24,8 +24,9 @@ import mySetImplementations.Set2;
  * ArrayList<Matp.Entry<Integer, Float>>
  * 
  * @author pedroirivera-vega
- * @author Maria A Marrero
- * @author Yamil J Gonzalez
+ * Modified by
+ * @author Maria A. Marrero 802-15-4204 Sec 090
+ * @author Yamil J. Gonzalez 802-15-3112 Sec 090
  *
  */
 public class StrategiesTimeCollection<E> 

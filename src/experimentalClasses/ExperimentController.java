@@ -13,7 +13,10 @@ import dataGenerator.DataGenerator;
  * strategies to solve the set intersections problem as in p1_40354020_172. 
  * 
  * @author pedroirivera-vega
- * @author Yamil J Gonzalez
+ * 
+ * Modified by
+ * @author Maria A. Marrero 802-15-4204 Sec 090
+ * @author Yamil J. Gonzalez 802-15-3112 Sec 090
  */
 public class ExperimentController {
 	private int n; 					   // number of companies
