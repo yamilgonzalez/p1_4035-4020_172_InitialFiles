@@ -1,6 +1,5 @@
 package mySetImplementations;
 
-import interfaces.MySet;
 
 import java.util.ArrayList;
 import java.util.Iterator;

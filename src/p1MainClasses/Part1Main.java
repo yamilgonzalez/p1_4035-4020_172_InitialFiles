@@ -1,8 +1,6 @@
 package p1MainClasses;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 import dataGenerator.DataReader;
 import interfaces.IntersectionFinder;

@@ -1,10 +1,8 @@
 package mySetImplementations;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import interfaces.MySet;
 
 public class Set2<E> extends AbstractMySet<E> {
 	   private HashMap<E, E> elements; 
